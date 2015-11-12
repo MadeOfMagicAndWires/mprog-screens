@@ -9,6 +9,28 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <android.support.v7.widget.GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        app:columnCount='2'
+        app:rowCount='7'
+        android:layout_gravity='center_horizontal|center_vertical'>
+        <include layout="@layout/word_form_text" />
+        <include layout="@layout/word_form_submit"/>
+
+        <include layout="@layout/word_form_text" />
+        <include layout="@layout/word_form_submit" />
+
+        <include layout="@layout/word_form_text"/>
+        <include layout="@layout/word_form_submit"/>
+
+        <include layout="@layout/word_form_text"/>
+        <include layout="@layout/word_form_submit"/>
+
+        <include layout="@layout/word_form_text"/>
+        <include layout="@layout/word_form_submit"/>
+    </android.support.v7.widget.GridLayout>
+
+
 </RelativeLayout>
